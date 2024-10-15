@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import './App.css';
 import BookSearchDialog from './BookSearchDialog';
@@ -83,8 +83,8 @@ const App = () => {
   return (
     <div className="App">
       <section className="nav">
-        <h1>読みたい本リスト</h1>
-        <div className="button-like" onClick={handleAddClick}>本を追加</div>
+        <h1>本リスト</h1>
+        <div className="button-like" onClick={handleAddClick}>本を検索</div>
       </section>
       <section className="main">
         {bookRows}
