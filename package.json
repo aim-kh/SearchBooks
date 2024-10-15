@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://aim-kh.github.io/SearchBooks",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy":"gh-pages -d build"
+    "deploy":"vite build && gh-pages -d dist"
   },
   "dependencies": {
     "@types/react-modal": "^3.16.3",
